@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-declare module "@mui/material/styles" {
+declare module "@mui/system" {
   interface Theme {
     drawerWidth: number;
     appBarHeight: number;

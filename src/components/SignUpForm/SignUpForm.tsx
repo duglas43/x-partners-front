@@ -45,7 +45,7 @@ export const SignUpForm: FC<SignUpFormProps> = ({ onSubmit, ...boxProps }) => {
     setImageURL(URL.createObjectURL(acceptedFiles[0]));
   };
   const handleImageRemove = () => {
-    setValue("photo", undefined);
+    setValue("photo", undefined as unknown as any);
     setImageURL(undefined);
   };
   const onSumbitData = async (data: SignUpDto) => {

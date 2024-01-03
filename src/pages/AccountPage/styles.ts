@@ -10,7 +10,7 @@ export const UpdateUserCardSx: SxProps<Theme> = () => ({
 });
 
 export const centerContainerSx: SxProps<Theme> = (theme) => ({
-  height: `calc(100% - ${theme.appBarHeight}px)`,
+  height: `calc(100% - ${theme?.appBarHeight}px)`,
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

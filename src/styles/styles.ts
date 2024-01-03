@@ -34,21 +34,21 @@ export const tableContainerSx: SxProps<Theme> = (theme: any) => ({
   height: "100%",
   width: {
     xs: "calc(100vw - 60px)",
-    md: `calc(100vw - 60px - ${theme.drawerWidth}px)`,
+    md: `calc(100vw - 60px - ${theme?.drawerWidth}px)`,
   },
 });
 
 export const temporaryDrawerSx: SxProps<Theme> = (theme) => ({
   display: { xs: "block", md: "none" },
   "& .MuiDrawer-paper": {
-    width: theme.drawerWidth,
+    width: theme?.drawerWidth,
   },
 });
 export const permanentDrawerSx: SxProps<Theme> = (theme) => ({
   display: { xs: "none", md: "block" },
-  width: theme.drawerWidth,
+  width: theme?.drawerWidth,
   flexShrink: 0,
-  [`& .MuiDrawer-paper`]: { width: theme.drawerWidth },
+  [`& .MuiDrawer-paper`]: { width: theme?.drawerWidth },
 });
 export const mainSx: SxProps<Theme> = (theme) => ({
   flexGrow: 1,
